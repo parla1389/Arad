@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پرونده آقای گربه سیاه 🐈‍⬛🤍</title>
+  <style>
+    *{box-sizing:border-box}
+    body{margin:0;min-height:100vh;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at top,#35313d 0%,#17151c 45%,#0d0c10 100%);color:#fff;text-align:center;overflow-x:hidden}
+    .page{min-height:100vh;display:none;padding:45px 22px 60px;align-items:center;justify-content:center;flex-direction:column;opacity:0}
+    .page.active{display:flex;animation:pageEnter .7s cubic-bezier(.22,1,.36,1) forwards}
+    @keyframes pageEnter{0%{opacity:0;transform:translateY(25px) scale(.97)}100%{opacity:1;transform:translateY(0) scale(1)}}
+    h1{font-size:30px;margin:20px 0;line-height:1.7}
+    h2{font-size:25px;margin:18px 0;line-height:1.7}
+    p{max-width:650px;font-size:17px;line-height:2.2;margin:12px auto}
+    .cat{font-size:85px;animation:float 2.5s ease-in-out infinite}
+    .twocats{font-size:60px;margin:25px 0;animation:float 3s ease-in-out infinite}
+    @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+    .btn{border:none;border-radius:999px;padding:15px 25px;margin-top:25px;background:linear-gradient(135deg,#fff,#e7d9ff);color:#1b1721;font-size:16px;font-weight:bold;cursor:pointer;box-shadow:0 8px 25px rgba(255,255,255,.12);transition:transform .25s,box-shadow .25s}
+    .btn:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 12px 30px rgba(255,255,255,.2)}
+    .btn:active{transform:scale(.94)}
+    .facts,.letter{width:min(90%,650px);background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:25px;padding:25px;backdrop-filter:blur(10px);box-shadow:0 15px 40px rgba(0,0,0,.2)}
+    .facts{text-align:right;line-height:2.5}
+    .heart{color:#ffd9ec;font-weight:bold;line-height:2}
+    .photos{width:min(95%,800px);display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:25px 0 5px}
+    .photo{aspect-ratio:1/1;border-radius:20px;background:rgba(255,255,255,.09);border:1px dashed rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;padding:10px;font-size:14px;color:#ddd;transition:transform .3s,background .3s}
+    .photo:hover{transform:translateY(-6px) rotate(1deg);background:rgba(255,255,255,.14)}
+    .small{font-size:13px;color:#aaa}.footer{color:#aaa;font-size:13px;margin-top:35px}
+    .paw-print{position:fixed;z-index:99999;pointer-events:none;font-size:28px;opacity:0;filter:drop-shadow(0 0 8px rgba(255,255,255,.35));animation:pawWalk 1.2s ease-out forwards}
+    @keyframes pawWalk{0%{opacity:0;transform:translate(0,30px) rotate(-20deg) scale(.5)}20%{opacity:1;transform:translate(5px,0) rotate(-10deg) scale(1)}60%{opacity:.9}100%{opacity:0;transform:translate(45px,-120px) rotate(15deg) scale(.8)}}
+    .heart-particle{position:fixed;bottom:-50px;font-size:24px;animation:rise 6s linear infinite;opacity:.7;pointer-events:none;z-index:1}
+    .heart-particle:nth-child(1){left:8%;animation-delay:0s}.heart-particle:nth-child(2){left:18%;animation-delay:1s}.heart-particle:nth-child(3){left:30%;animation-delay:2s}.heart-particle:nth-child(4){left:43%;animation-delay:3s}.heart-particle:nth-child(5){left:56%;animation-delay:1.5s}.heart-particle:nth-child(6){left:68%;animation-delay:2.5s}.heart-particle:nth-child(7){left:78%;animation-delay:4s}.heart-particle:nth-child(8){left:88%;animation-delay:3.5s}.heart-particle:nth-child(9){left:95%;animation-delay:1.2s}.heart-particle:nth-child(10){left:50%;animation-delay:4.5s}
+    @keyframes rise{0%{transform:translateY(0) scale(.8);opacity:0}15%{opacity:.8}100%{transform:translateY(-110vh) scale(1.4) rotate(15deg);opacity:0}}
+    @media(max-width:600px){h1{font-size:26px}h2{font-size:22px}p{font-size:16px}.photos{grid-template-columns:1fr;max-width:260px}.photo{aspect-ratio:4/3}.cat{font-size:70px}.twocats{font-size:50px}}
+  </style>
+</head>
+<body>
+
+<section class="page active" id="page1">
+  <div class="cat">🐈‍⬛</div>
+  <h1>هی آقای گربه سیاه...</h1>
+  <p>آره، خودت! 🐈‍⬛<br>اگه این صفحه رو باز کردی، یعنی بالاخره گربه سفیدت تونسته یه سورپرایز برات درست کنه. 🤍</p>
+  <p><b>فقط یه قانون داریم:</b><br>تا آخرش حق نداری فرار کنی. 😾</p>
+  <button class="btn" onclick="next(2)">باشه گربه سفید، بریم 🐾</button>
+  <div class="twocats">🐈‍⬛　🤍🐈</div>
+</section>
+
+<section class="page" id="page2">
+  <h2>داستان دو تا گربه</h2>
+  <p>یکی یه گربه سیاه بود...<br>یکی هم یه گربه سفید.</p>
+  <p>هیچ‌کدومشون نمی‌دونستن قراره یه روزی اینقدر به هم وابسته بشن.</p>
+  <p>بعد یه روز، داستانشون شروع شد...<br>و حالا <b>۵ ماهه</b> که این دو تا گربه ول‌کن هم نیستن. 😂❤️</p>
+  <div class="photos">
+    <div class="photo">📸<br>عکس خاطره‌تون</div>
+    <div class="photo">😹<br>یه عکس بامزه</div>
+    <div class="photo">🤍<br>عکس موردعلاقه‌ت</div>
+  </div>
+  <p class="small">بعداً می‌تونی این سه جای خالی رو با عکس‌هاتون عوض کنی.</p>
+  <button class="btn" onclick="next(3)">پرونده آقای گربه سیاه 🕵🏻‍♀️</button>
+</section>
+
+<section class="page" id="page3">
+  <div class="cat">🐈‍⬛</div>
+  <h2>پرونده شماره ARAD-001 🐾</h2>
+  <div class="facts">
+    <b>متهم:</b> یک گربه سیاه به نام آراد<br>
+    <b>جرم:</b> دزدیدن قلب یک گربه سفید<br>
+    <b>زمان ارتکاب:</b> حدود ۵ ماه پیش<br>
+    <b>میزان خسارت:</b> یک قلب کاملاً دزدیده‌شده ❤️<br>
+    <b>وضعیت فعلی:</b> هنوز تحت تعقیب گربه سفید قرار دارد 😾
+  </div>
+  <p><b>اتهامات دیگر:</b><br>☑️ زیادی دوست‌داشتنی بودن<br>☑️ باعث لبخندهای بی‌دلیل شدن<br>☑️ ایجاد دلتنگی از فاصله‌ی دور<br>☑️ وابسته کردن گربه سفید<br>☑️ انکار همه اتهامات فوق 😂</p>
+  <button class="btn" onclick="next(4)">مدارک جرم را مشاهده کن 👀</button>
+</section>
+
+<section class="page" id="page4">
+  <div style="font-size:70px">🔎🐾</div>
+  <h2>مدارک جرم شماره ۱</h2>
+  <p>طبق شواهد موجود، متهم در طول این ۵ ماه بارها و بارها باعث شده گربه سفید بدون هیچ دلیل منطقی وسط روز لبخند بزنه. 😂🤍</p>
+  <p>همچنین گزارش شده که با دیدن اسم «آراد»، ضربان قلب گربه سفید کمی مشکوک می‌شود. 😾❤️</p>
+  <button class="btn" onclick="next(5)">مدرک بعدی رو ببین 👀</button>
+</section>
+
+<section class="page" id="page5">
+  <div class="twocats">🐈‍⬛🤍🐈</div>
+  <h2>مدرک جرم شماره ۲</h2>
+  <div class="letter">
+    <p>بعضی آدما یهو وارد زندگی آدم می‌شن... بدون اینکه بدونی قراره چقدر مهم بشن.</p>
+    <p>اولش شاید فقط یه آدم معمولی باشن، ولی کم‌کم تبدیل می‌شن به کسی که نبودنش یه چیزی از روزت کم می‌کنه.</p>
+    <p>و فکر کنم تو برای من دقیقاً همون آدمی، آراد. 🤍</p>
+    <p>کسی که توی این ۵ ماه، یه عالمه خاطره، خنده، دلتنگی و حس خوب به زندگی من اضافه کرده.</p>
+  </div>
+  <button class="btn" onclick="next(6)">هنوز یه چیز دیگه مونده... 🥺</button>
+</section>
+
+<section class="page" id="page6">
+  <div class="cat">🐈‍⬛</div>
+  <h2>حکم نهایی دادگاه گربه‌ها ⚖️</h2>
+  <div class="facts">
+    <p>پس از بررسی کامل پرونده، مدارک، شواهد و شهادت گربه سفید...</p>
+    <p>متهم، یعنی آقای <b>آراد</b>، در تمام اتهامات وارده <b>مقصر شناخته شد.</b> 😂</p>
+    <p>مجازات متهم:<br><br><span class="heart">دوست داشته شدن، بغل شدن، و تحمل کردن گربه سفید برای مدت نامحدود. 🤍</span></p>
+  </div>
+  <button class="btn" onclick="next(7)">قبول دارم، ادامه بده 😹</button>
+</section>
+
+<section class="page" id="page7">
+  <div style="font-size:75px">🐈‍⬛🤍🐈</div>
+  <h1>یه حرف آخر...</h1>
+  <div class="letter">
+    <p>آراد،</p>
+    <p>شاید این فقط یه صفحه‌ی کوچیک باشه، ولی پشت تک‌تک این کلمه‌ها یه عالمه حس قایم شده.</p>
+    <p>ممنونم که توی این ۵ ماه بخشی از روزها و خاطره‌های من شدی.</p>
+    <p>امیدوارم این داستان دو تا گربه فقط به «۵ ماه» ختم نشه...</p>
+    <p>امیدوارم کلی فصل دیگه هم داشته باشه؛ با کلی خنده، کلی خاطره، کمی شیطنت، کمی لجبازی و البته مقدار زیادی گربه‌بازی. 😂🐾</p>
+    <p><b>دوستت دارم، آقای گربه سیاه. 🐈‍⬛🤍</b></p>
+  </div>
+  <button class="btn" onclick="next(8)">پایان پرونده 💌</button>
+</section>
+
+<section class="page" id="page8">
+  <span class="heart-particle">🤍</span><span class="heart-particle">🖤</span>
+  <span class="heart-particle">🤍</span><span class="heart-particle">🖤</span>
+  <span class="heart-particle">🤍</span><span class="heart-particle">🖤</span>
+  <span class="heart-particle">🤍</span><span class="heart-particle">🖤</span>
+  <span class="heart-particle">🤍</span><span class="heart-particle">🖤</span>
+  <div style="font-size:90px">🐈‍⬛❤️🐈</div>
+  <h1>پرونده مختومه شد.</h1>
+  <p>ولی داستان دو تا گربه...</p>
+  <h2>هنوز ادامه دارد. 🤍</h2>
+  <p class="small">۵ ماه از شروعش گذشته؛<br>بقیه‌ش با خودمون. 🐾</p>
+  <div style="margin-top:28px"><span style="font-size:35px">✨</span><span style="font-size:35px">🤍</span><span style="font-size:35px">🐈‍⬛</span><span style="font-size:35px">🐈</span><span style="font-size:35px">✨</span></div>
+  <p class="footer">ساخته شده با عشق، برای آقای گربه سیاه 🐈‍⬛</p>
+</section>
+
+<script>
+function next(pageNumber){
+  createPawTrail();
+  document.querySelectorAll(".page").forEach(page=>page.classList.remove("active"));
+  setTimeout(()=>{
+    const nextPage=document.getElementById("page"+pageNumber);
+    if(nextPage){
+      nextPage.classList.add("active");
+      window.scrollTo({top:0,behavior:"smooth"});
+    }
+  },350);
+}
+
+function createPawTrail(){
+  const paws=7;
+  for(let i=0;i<paws;i++){
+    setTimeout(()=>{
+      const paw=document.createElement("div");
+      paw.className="paw-print";
+      paw.textContent="🐾";
+      const side=i%2===0?-1:1;
+      paw.style.left=`calc(50% + ${side*(15+Math.random()*35)}px)`;
+      paw.style.bottom=`${40+i*55}px`;
+      paw.style.fontSize=`${22+Math.random()*10}px`;
+      paw.style.transform=`rotate(${-20+Math.random()*40}deg)`;
+      document.body.appendChild(paw);
+      setTimeout(()=>paw.remove(),1300);
+    },i*100);
+  }
+}
+</script>
+</body>
+</html>
